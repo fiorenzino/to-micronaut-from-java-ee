@@ -2,7 +2,7 @@
 
 <table width="100%">
   <tr><th>JAXRS</th><th>MICRONAUT</th></tr>
-  <tr><td colspan="4"><div style="text-align: center;">URI DEFINITION</div></td></tr>
+  <tr><td colspan="4"><div align="center">URI DEFINITION</div></td></tr>
   <tr>
     <td>
       @ApplicationPath <br/>
