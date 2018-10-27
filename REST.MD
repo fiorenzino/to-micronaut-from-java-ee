@@ -1,10 +1,10 @@
 # JAX-RS
 
-
-JAXRS||MICRONAUT
-  --- |  --- |  --- 
-URI DEFINITION
-||@ApplicationPath||
+<table>
+  <tr><th>JAXRS</th><th>MICRONAUT</th></tr>
+  <tr><td colspan="4">URI DEFINITION</td></tr>
+  <tr><td></td><td>@ApplicationPath</td><td></td></tr>
+</table>
 Global path
 
 @ApplicationPath("/api")
