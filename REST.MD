@@ -3,21 +3,48 @@
 <table width="100%">
   <tr><th>JAXRS</th><th>MICRONAUT</th></tr>
   <tr><td colspan="4">URI DEFINITION</td></tr>
-  <tr><td></td><td>@ApplicationPath</td><td></td></tr>
+  <tr>
+    <td>
+      @ApplicationPath <br/>
+      Global path
+    </td>
+    <td>
+      @ApplicationPath("/api")
+    </td>
+    <td>
+      NOT EXIST
+    </td>
+    <td>
+      NOT EXIST
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      @Path<br/>
+      For single class<br/>
+      Root resource classes<br/>
+    </td>
+    <td>
+      @Path("/issues")
+    </td>
+    <td>
+     @Controller("/issues")<br/>
+      [URI Path Variables]
+    </td>
+    <td>
+      @Controller
+    </td>
+  </tr>
 </table>
-Global path
 
-@ApplicationPath("/api")
-NOT EXIST
-NOT EXIST
-@Path
-For single class
-Root resource classes
-@Path("/issues")
-@Controller("/issues")
 
-[URI Path Variables]
-@Controller
+
+
+
+
+
+
 @Path
 For single method
 @Path("start")
