@@ -1,7 +1,12 @@
 # JAX-RS
 
 <table width="100%">
-  <tr><th>JAXRS</th><th>MICRONAUT</th></tr>
+  <tr>
+    <th>JAXRS</th>
+    <th></th>
+    <th></th>
+    <th>MICRONAUT</th>
+  </tr>
   <tr><td colspan="4"><div align="center">URI DEFINITION</div></td></tr>
   <tr>
     <td>
@@ -36,6 +41,85 @@
       @Controller
     </td>
   </tr>
+  <tr>
+    <td>
+      @Path<br/>
+      For single method
+    </td>
+    <td>
+      @Path("start")
+    </td>
+    <td>
+    </td>
+    <td>
+     NOT EXIST  - you should use  Routing Annotations es. @Get(“/path”)
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+        <div align="center">(JAXRS) HTTP Method Matching – (MICRONAUT) Routing Annotations
+ [Micronaut is more COMPACT – they use one anntoation on method to indicate @Path + @(GET|POST|DELETE|HEAD|OPTIONS)]
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     @GET
+    </td>
+    <td>
+     
+    </td>
+    <td>
+    @Get("/path")
+    </td>
+    <td>
+     @Get  
+    </td>
+  </tr>
+  <tr>
+    <td>
+    @POST
+    </td>
+    <td>
+      
+    </td>
+    <td>
+    @Post(“/path”) <br/>
+    @Post(value = "/p", consumes=MediaType.TEXT_PLAIN)
+    </td>
+    <td>
+     @Post 
+    </td>
+  </tr>
+    <tr>
+    <td>
+   @DELETE
+    </td>
+    <td>
+      
+    </td>
+    <td>
+   @Delete(“/path”)
+    </td>
+    <td>
+    @Delete
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+   @PUT
+    </td>
+    <td>
+      
+    </td>
+    <td>
+ @Put(“/path”)
+    </td>
+    <td>
+    @Delete
+    </td>
+  </tr>
 </table>
 
 
@@ -45,31 +129,8 @@
 
 
 
-@Path
-For single method
-@Path("start")
- 
 
 
-NOT EXIST  - you should use  Routing Annotations es. @Get(“/path”)
-(JAXRS) HTTP Method Matching – (MICRONAUT) Routing Annotations
- [Micronaut is more COMPACT – they use one anntoation on method to indicate @Path + @(GET|POST|DELETE|HEAD|OPTIONS)]
-@GET
-
-@Get("/path")
-@Get  
-@POST
-
-@Post(“/path”)
-@Post(value = "/p", consumes=MediaType.TEXT_PLAIN)
-@Post 
-@DELETE
-
-@Delete(“/path”)
-@Delete
-@PUT
-
-@Put(“/path”)
 @Put 
 @HEAD
 
