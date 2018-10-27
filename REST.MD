@@ -1,16 +1,9 @@
-##
+# JAX-RS
 
 
-
-JAX-RS
-
-
-JAXRS
-
-MICRONAUT
-
-
-REST
+      JAXRS  |             | MICRONAUT
+------------ |------------ | -------------
+             |    REST     |     
 
 URI DEFINITION
 
@@ -139,48 +132,3 @@ Path("1234")
 .build(); assertEquals("http://www.myserver.com/book/1234", uri.toString());
 UriMatchTemplate 
 UriTemplate.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
