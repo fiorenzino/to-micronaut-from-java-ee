@@ -1,6 +1,6 @@
 # JAX-RS
 
-<table>
+<table width="100%">
   <tr><th>JAXRS</th><th>MICRONAUT</th></tr>
   <tr><td colspan="4">URI DEFINITION</td></tr>
   <tr><td></td><td>@ApplicationPath</td><td></td></tr>
