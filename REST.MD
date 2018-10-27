@@ -3,9 +3,8 @@
 
 JAXRS||MICRONAUT
   --- |  --- |  --- 
-URI DEFINITION ||
-
-@ApplicationPath||
+URI DEFINITION
+||@ApplicationPath||
 Global path
 
 @ApplicationPath("/api")
