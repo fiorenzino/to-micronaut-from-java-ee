@@ -52,7 +52,8 @@
     <td>
     </td>
     <td>
-     NOT EXIST  - you should use  Routing Annotations es. @Get(“/path”)
+     NOT EXIST  <br/>
+      use  Routing Annotations es. @Get(“/path”)
     </td>
   </tr>
   <tr>
@@ -278,7 +279,7 @@ ResponseBuilder<br/>
    @Consumes(MediaType.APPLICATION_XML)
     </td>
     <td>
-  @Consumes([MediaType.APPLICATION_FORM_URLENCODED, MediaType.APPLICATION_JSON])
+  @Consumes(MediaType.APPLICATION_XML)
   </td>
     <td>
      @Consumes
