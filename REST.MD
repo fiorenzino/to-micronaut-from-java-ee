@@ -113,103 +113,213 @@
  @Put(“/path”)
     </td>
     <td>
-    @Delete
+   @Put
     </td>
   </tr>
-</table>
-
-
-
-
-
-
-
-
-
-
-@Put 
-@HEAD
-
-
+   <tr>
+    <td>
+   @HEAD
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
 @Head 
-@OPTIONS
-
-
+    </td>
+  </tr>
+   <tr>
+    <td>
+   @OPTIONS
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
 @Options
-NOT EXIST
-
-
+    </td>
+  </tr>
+   <tr>
+    <td>
+   NOT EXIST
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
 @Trace 
-NOT EXIST
-
-
-@Patch
-@MatrixParam
-Matrix Param
+    </td>
+  </tr>
+  <tr>
+    <td>
+   NOT EXIST
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+@Patch 
+    </td>
+  </tr>
+    <tr>
+    <td>
+   @MatrixParam
+    </td>
+    <td>
+      Matrix Param
 public Customers getCustomersByName(@MatrixParam("firstname") String firstname,@MatrixParam("surname") String surname) { // URI : /customer/search;firstname=fiorenzo;surname=pizza
-
-
-@DefaultValue("50")
-public Customers getCustomersByAge(@DefaultValue("50") @QueryParam("age") int age) {
-
-
-
-
-
-
-Consuming and Producing Content Types (MEDIA TYPE)
-
-
-APPLICATION_ATOM_XML “application/atom+xml” APPLICATION_FORM_URLENCODED “application/x-www-form-urlencoded” APPLICATION_JSON “application/json” APPLICATION_OCTET_STREAM “application/octet-stream” APPLICATION_SVG_XML “application/svg+xml” APPLICATION_XHTML_XML “application/xhtml+xml” APPLICATION_XML “application/xml” MULTIPART_FORM_DATA “multipart/form-data” TEXT_HTML “text/html” TEXT_PLAIN “text/plain” TEXT_XML “text/xml” WILDCARD “*/*”
-MediaType class => MULTIPART_FORM_DATA
-
-
-
-Returned Types
-
-
-Object  => 
-
+    </td>
+    <td>
+    </td>
+    <td>
+?? 
+    </td>
+  </tr>
+   <tr>
+    <td>
+   (@DefaultValue
+    </td>
+    <td>
+     public User byCodeId(@DefaultValue("50") @QueryParam("id") int id) {...}
+    </td>
+    <td>
+    </td>
+    <td>
+?? 
+    </td>
+  </tr>
+   <tr>
+    <td colspan="4">
+        <div align="center">
+         Consuming and Producing Content Types (MEDIA TYPE)
+      </div>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+    APPLICATION_ATOM_XML “application/atom+xml” APPLICATION_FORM_URLENCODED “application/x-www-form-urlencoded” APPLICATION_JSON “application/json” APPLICATION_OCTET_STREAM “application/octet-stream” APPLICATION_SVG_XML “application/svg+xml” APPLICATION_XHTML_XML “application/xhtml+xml” APPLICATION_XML “application/xml” MULTIPART_FORM_DATA “multipart/form-data” TEXT_HTML “text/html” TEXT_PLAIN “text/plain” TEXT_XML “text/xml” WILDCARD “*/*”
+    </td>
+    <td>
+      MediaType class => MULTIPART_FORM_DATA
+    </td>
+    <td>
+    </td>
+  </tr>
+   <tr>
+    <td colspan="4">
+        <div align="center">
+          Returned Types
+      </div>
+    </td>
+  </tr>
+   <tr>
+    <td colspan="4">
+        <div align="center">
+         Consuming and Producing Content Types (MEDIA TYPE)
+      </div>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+    Object  => 
 Response
 Response.ok().build();
 Response.noContent().build();
-
 ResponseBuilder
-
-
-
-
-
-
-Consuming and Producing Content Types
-
-@Produces
-@Produces(MediaType.APPLICATION_XML)
-@Produces(MediaType.TEXT_HTML)
-@Produces
-@Consumes
-@Consumes(MediaType.APPLICATION_XML)
-@Consumes([MediaType.APPLICATION_FORM_URLENCODED, MediaType.APPLICATION_JSON])
-@Consumes
-Contextual Information
-
-
-@Context 
+    </td>
+    <td>
+???    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+        <div align="center">
+          Consuming and Producing Content Types
+      </div>
+    </td>
+  </tr>
+   <tr>
+    <td>
+      @Produces
+    </td>
+    <td>
+   @Produces(MediaType.APPLICATION_XML)
+    </td>
+    <td>
+  @Produces(MediaType.TEXT_HTML)    
+  </td>
+    <td>
+      @Produces
+    </td>
+  </tr>
+   <tr>
+    <td>
+     @Consumes
+    </td>
+    <td>
+   @Consumes(MediaType.APPLICATION_XML)
+    </td>
+    <td>
+  @Consumes([MediaType.APPLICATION_FORM_URLENCODED, MediaType.APPLICATION_JSON])
+  </td>
+    <td>
+     @Consumes
+    </td>
+  </tr>
+    <tr>
+    <td colspan="4">
+        <div align="center">
+          Contextual Information
+      </div>
+    </td>
+  </tr>
+     <tr>
+    <td>
+      @Context 
+      HttpHeaders, UriInfo, Request, SecurityContext, and Providers
+    </td>
+    <td>
+   @Context 
 UriInfo uriInfo;
 
-HttpHeaders, UriInfo, Request, SecurityContext, and Providers
-
 getDefaultMediaType(@Context HttpHeaders headers
-
-
-Building URIs
-
-
-UriBuilder
-
+    </td>
+    <td>
+  </td>
+    <td>
+    </td>
+  </tr>
+   <tr>
+    <td colspan="4">
+        <div align="center">
+          Building URIs
+      </div>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+ UriBuilder
 URI uri = UriBuilder.fromUri("http://www.myserver.com")
 .path("book").
 Path("1234")
 .build(); assertEquals("http://www.myserver.com/book/1234", uri.toString());
+    </td>
+    <td>
+  </td>
 UriMatchTemplate 
 UriTemplate.
+    <td>
+    </td>
+  </tr>
+</table>
+
