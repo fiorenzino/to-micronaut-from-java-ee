@@ -58,8 +58,8 @@
   <tr>
     <td colspan="4">
         <div align="center">
-          (JAXRS) HTTP Method Matching – (MICRONAUT) Routing Annotations
- [Micronaut is more COMPACT – they use one anntoation on method to indicate @Path + @(GET|POST|DELETE|HEAD|OPTIONS)]
+          (JAXRS) HTTP Method Matching – (MICRONAUT) Routing Annotations <br/>
+ Micronaut use one annotation instead of two annotations: @Path + @(GET|POST|DELETE|HEAD|OPTIONS)
       </div>
     </td>
   </tr>
@@ -170,7 +170,8 @@
     </td>
     <td>
       Matrix Param
-public Customers getCustomersByName(@MatrixParam("firstname") String firstname,@MatrixParam("surname") String surname) { // URI : /customer/search;firstname=fiorenzo;surname=pizza
+public Customers getCustomersByName(@MatrixParam("firstname") String firstname,@MatrixParam("surname") String surname) {}<br/>
+      // URI : /customer/search;firstname=fiorenzo;surname=pizza
     </td>
     <td>
     </td>
@@ -202,7 +203,16 @@ public Customers getCustomersByName(@MatrixParam("firstname") String firstname,@
     <td>
     </td>
     <td>
-    APPLICATION_ATOM_XML “application/atom+xml” APPLICATION_FORM_URLENCODED “application/x-www-form-urlencoded” APPLICATION_JSON “application/json” APPLICATION_OCTET_STREAM “application/octet-stream” APPLICATION_SVG_XML “application/svg+xml” APPLICATION_XHTML_XML “application/xhtml+xml” APPLICATION_XML “application/xml” MULTIPART_FORM_DATA “multipart/form-data” TEXT_HTML “text/html” TEXT_PLAIN “text/plain” TEXT_XML “text/xml” WILDCARD “*/*”
+      APPLICATION_ATOM_XML “application/atom+xml” <br/>
+      APPLICATION_FORM_URLENCODED “application/x-www-form-urlencoded” <br/>
+      APPLICATION_JSON “application/json” <br/>
+      APPLICATION_OCTET_STREAM “application/octet-stream” <br/>
+      APPLICATION_SVG_XML “application/svg+xml” <br/>
+      APPLICATION_XHTML_XML “application/xhtml+xml” <br/>
+      APPLICATION_XML “application/xml” <br/>
+      MULTIPART_FORM_DATA “multipart/form-data” <br/>
+      TEXT_HTML “text/html” TEXT_PLAIN “text/plain” <br/>
+      TEXT_XML “text/xml” WILDCARD “*/*”
     </td>
     <td>
       MediaType class => MULTIPART_FORM_DATA
@@ -228,11 +238,11 @@ public Customers getCustomersByName(@MatrixParam("firstname") String firstname,@
     <td>
     </td>
     <td>
-    Object  => 
-Response
-Response.ok().build();
-Response.noContent().build();
-ResponseBuilder
+    Object  => <br/>
+Response<br/>
+Response.ok().build();<br/>
+Response.noContent().build();<br/>
+ResponseBuilder<br/>
     </td>
     <td>
 ???    </td>
