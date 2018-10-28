@@ -1,6 +1,6 @@
-# JAX-RS
+# REST api - JAX-RS vs Micronaut API
 
-<table width="80%">
+<table width="100%">
   <tr>
     <th>JAXRS</th>
     <th></th>
@@ -297,10 +297,9 @@ ResponseBuilder<br/>
       HttpHeaders, UriInfo, Request, SecurityContext, and Providers
     </td>
     <td>
-   @Context 
-UriInfo uriInfo;
-
-getDefaultMediaType(@Context HttpHeaders headers
+   @Context  <br/>
+UriInfo uriInfo; <br/>
+public void getDefaultMediaType(@Context HttpHeaders headers){}
     </td>
     <td>
   </td>
@@ -322,13 +321,14 @@ getDefaultMediaType(@Context HttpHeaders headers
 URI uri = UriBuilder.fromUri("http://www.myserver.com")
 .path("book").
 Path("1234")
-.build(); assertEquals("http://www.myserver.com/book/1234", uri.toString());
+.build(); <br/>
+      // http://www.myserver.com/book/1234
     </td>
     <td>
   </td>
-UriMatchTemplate 
-UriTemplate.
-    <td>
+   <td>
+UriMatchTemplate  <br/>
+UriTemplate. <br/>
     </td>
   </tr>
 </table>
