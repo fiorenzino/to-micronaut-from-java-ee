@@ -57,7 +57,8 @@
   </tr>
   <tr>
     <td colspan="4">
-        <div align="center">(JAXRS) HTTP Method Matching – (MICRONAUT) Routing Annotations
+        <div align="center">
+          (JAXRS) HTTP Method Matching – (MICRONAUT) Routing Annotations
  [Micronaut is more COMPACT – they use one anntoation on method to indicate @Path + @(GET|POST|DELETE|HEAD|OPTIONS)]
       </div>
     </td>
@@ -67,7 +68,6 @@
      @GET
     </td>
     <td>
-     
     </td>
     <td>
     @Get("/path")
@@ -81,7 +81,6 @@
     @POST
     </td>
     <td>
-      
     </td>
     <td>
     @Post(“/path”) <br/>
@@ -96,7 +95,6 @@
    @DELETE
     </td>
     <td>
-      
     </td>
     <td>
    @Delete(“/path”)
@@ -105,13 +103,11 @@
     @Delete
     </td>
   </tr>
-  
   <tr>
     <td>
    @PUT
     </td>
     <td>
-      
     </td>
     <td>
  @Put(“/path”)
